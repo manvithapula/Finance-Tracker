@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker | Personal Expense Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('bg.jpeg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        </style>
+    <div class="container">
+        <h1 style="text-align: center; margin-bottom: 20px; color: var(--accent-color)">
+            Personal Finance Tracker
+        </h1>
+        
+        <div class="dashboard">
+            <div class="left-panel">
+                <div class="expense-form">
+                    <h2 style="margin-bottom: 15px; color: var(--accent-color)">Add Transaction</h2>
+                    
+                    <select id="transaction-type">
+                        <option value="expense">Expense</option>
+                        <option value="income">Income</option>
+                    </select>
+                    
+                    <input type="number" id="amount" placeholder="Amount in ₹" min="0" step="0.01">
+                    
+                    <select id="category">
+                        <option value="">Select Category</option>
+                        <!-- Expense Categories -->
+                        <optgroup label="Expenses">
+                            <option value="food">🍽️ Food</option>
+                            <option value="transport">🚗 Transport</option>
+                            <option value="utilities">⚡ Utilities</option>
+                            <option value="entertainment">🎉 Entertainment</option>
+                            <option value="shopping">🛍️ Shopping</option>
+                            <option value="healthcare">🏥 Healthcare</option>
+                        </optgroup>
+                        
+                        <!-- Income Categories -->
+                        <optgroup label="Income">
+                            <option value="salary">💼 Salary</option>
+                            <option value="freelance">💻 Freelance</option>
+                            <option value="investments">📈 Investments</option>
+                            <option value="other-income">💰 Other Income</option>
+                        </optgroup>
+                    </select>
+                    
+                    <input type="date" id="date">
+                    
+                    <input type="text" id="description" placeholder="Transaction Description">
+                    
+                    <button class="add-expense-btn">Add Transaction</button>
+                </div>
+
+                <div class="transactions-list">
+                    <h2 style="margin-bottom: 15px; color: var(--accent-color)">
+                        Recent Transactions
+                    </h2>
+                    <div id="transaction-container"></div>
+                </div>
+            </div>
+
+            <div class="right-panel">
+                <div class="summary-card">
+                    <h2 style="margin-bottom: 15px; color: var(--accent-color)">
+                        Financial Summary
+                    </h2>
+                    
+                    <div class="metric">
+                        <div class="metric-icon">💸</div>
+                        <span>Total Income</span>
+                        <span id="total-income" class="income">₹0</span>
+                    </div>
+                    
+                    <div class="metric">
+                        <div class="metric-icon">💳</div>
+                        <span>Total Expenses</span>
+                        <span id="total-expenses" class="expense">₹0</span>
+                    </div>
+                    
+                    <div class="metric">
+                        <div class="metric-icon">💰</div>
+                        <span>Net Balance</span>
+                        <span id="net-balance">₹0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
