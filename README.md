@@ -18,7 +18,6 @@ A simple web-based **Finance Tracker** built with **HTML, CSS, JavaScript, Expre
 ## Installation
 
 ### Prerequisites:
-- Node.js and npm installed
 - MySQL installed and running
 
 ### Steps:
