@@ -15,8 +15,8 @@ app.use((req, res, next) => {
 // Database Connection
 const pool = mysql.createPool({
     host: 'localhost',
-    user: 'root', // Ensure this matches your MySQL username
-    password: 'manvitha@2004', // Your MySQL password
+    user: '', // Ensure this matches your MySQL username
+    password: '', // Your MySQL password
     database: 'finance_tracker',
     waitForConnections: true,
     connectionLimit: 10,
