@@ -52,7 +52,10 @@ node server.js
    ```
    http://localhost:PORTNUMBER
    ```
+# SCREENSHOTS
+![Image](https://github.com/user-attachments/assets/3b60e144-fba0-43b1-9424-475dbed619d5)
 
+![Image](https://github.com/user-attachments/assets/5e5d1f30-f483-475b-9341-1827c659619d)
 
 
 ## License
